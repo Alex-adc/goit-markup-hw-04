@@ -9,6 +9,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -58,7 +59,10 @@ body {
 .about-list,
 .description-list,
 .menu-list,
-.header-menu {
+.header-menu,
+.social-list-item,
+.customers-list,
+.social-icons-dark {
   list-style-type: none;
 }
 
@@ -139,7 +143,13 @@ body {
   color: #2196f3;
 }
 
+.header-menu-mail {
+  display: flex;
+  align-items: center;
+}
+
 .header-menu-link {
+  display: flex;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -147,9 +157,11 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
+  margin-right: 30px;
 }
 
 .header-tel {
+  display: flex;
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
@@ -160,6 +172,19 @@ body {
   font-style: normal;
 }
 
+.header-mail-svg {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--grey);
+}
+
+.header-mob-svg {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
 /*============== END HEADER ==============*/
 
 /*============== HERO ==============*/
@@ -168,6 +193,17 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  background-color: rgba(47, 48, 58, 0.4);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: auto;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4) 50%,
+      rgba(47, 48, 58, 0.4) 50%
+    ),
+    url(../images-hw-4/hero-img.jpg);
 }
 .hero-title {
   font-family: Roboto;
@@ -245,6 +281,23 @@ body {
   color: #757575;
 }
 
+.discription-svg {
+  width: 65px;
+  height: 70px;
+  padding: 25px, 102px;
+}
+
+.discription-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 .about-us {
   background-color: #f5f4fa;
 }
@@ -263,6 +316,39 @@ body {
 .about-list {
   display: flex;
   justify-content: space-between;
+}
+
+.social-list-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list-link:hover {
+  background: var(--accent-text-color);
+}
+
+.social-list-link:hover .social-list-icon {
+  fill: var(--white);
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .about-list-item:not(:last-child) {
@@ -335,6 +421,92 @@ body {
   color: #757575;
 }
 
+.customers-title {
+  margin-top: 94px;
+  margin-bottom: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+}
+
+.customers-list-item {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 94px;
+}
+
+.customers-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers-svg-1 {
+  fill: #afb1b8;
+  width: 44px;
+  height: 49px;
+  margin-top: 20px;
+  margin-left: 62px;
+}
+
+.customers-svg-2 {
+  fill: #afb1b8;
+  width: 40px;
+  height: 52px;
+  margin-top: 20px;
+  margin-left: 62px;
+}
+
+.customers-svg-3 {
+  fill: #afb1b8;
+  width: 42px;
+  height: 54px;
+  margin-top: 20px;
+  margin-left: 62px;
+}
+
+.customers-svg-4 {
+  fill: #afb1b8;
+  width: 80px;
+  height: 42px;
+  margin-top: 20px;
+  margin-left: 62px;
+}
+
+.customers-svg-5 {
+  fill: #afb1b8;
+  width: 59px;
+  height: 47px;
+  margin-top: 20px;
+  margin-left: 62px;
+}
+
+.customers-svg-6 {
+  fill: #afb1b8;
+  width: 88px;
+  height: 45px;
+  margin-top: 20px;
+  margin-left: 62px;
+}
+
+.customers-list-item:hover {
+  border: 4px solid #2196f3;
+}
+
+.customers-list-item:hover .customers-svg-1 {
+  fill: Solid #afb1b8;
+}
 /*============== END ABOUT ==============*/
 
 /*============== CONTACT ==============*/
@@ -386,6 +558,51 @@ body {
 .logo-ss {
   color: #ffffff;
 }
+
+.join-text {
+  display: flex;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.social-icons-dark {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons-link-dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.social-icons-link-dark:hover .social-icons-svg-footer,
+.social-icons-link-dark:focus .social-icons-svg-footer {
+  fill: var(--white);
+}
+
+.social-icons-item:hover .social-icons-link-dark,
+.social-icons-item:focus .social-icons-link-dark {
+  background: #2196f3;
+}
+
+.social-icons-svg-footer {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  fill: var(--white);
+}
+
 /*============== END CONTACT ==============*/
 
 /*============== PORTFOLIO ==============*/
