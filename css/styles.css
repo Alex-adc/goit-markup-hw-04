@@ -185,6 +185,14 @@ body {
   margin-right: 10px;
 }
 
+.header-menu-link:hover .header-mail-svg {
+  fill: var(--accent-text-color);
+}
+
+.header-menu-adress:hover .header-tel {
+  fill: var(--accent-text-color);
+}
+
 /*============== END HEADER ==============*/
 
 /*============== HERO ==============*/
@@ -349,6 +357,7 @@ body {
 .social-list-icon {
   width: 20px;
   height: 20px;
+  fill: #afb1b8;
 }
 
 .about-list-item:not(:last-child) {
@@ -505,7 +514,27 @@ body {
 }
 
 .customers-list-item:hover .customers-svg-1 {
-  fill: Solid #afb1b8;
+  fill: var(--accent-text-color);
+}
+
+.customers-list-item:hover .customers-svg-2 {
+  fill: var(--accent-text-color);
+}
+
+.customers-list-item:hover .customers-svg-3 {
+  fill: var(--accent-text-color);
+}
+
+.customers-list-item:hover .customers-svg-4 {
+  fill: var(--accent-text-color);
+}
+
+.customers-list-item:hover .customers-svg-5 {
+  fill: var(--accent-text-color);
+}
+
+.customers-list-item:hover .customers-svg-6 {
+  fill: var(--accent-text-color);
 }
 /*============== END ABOUT ==============*/
 
@@ -702,4 +731,10 @@ body {
 
 .offer-img {
   padding-bottom: 20px;
+}
+
+.offer-item:hover,
+.offer-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
