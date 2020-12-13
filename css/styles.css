@@ -610,13 +610,13 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-  margin-left: 156px;
+  margin-left: 70px;
 }
 
 .social-icons-dark {
   display: flex;
   justify-content: space-between;
-  margin-left: 156px;
+  margin-left: 70px;
 }
 
 .social-icons-link-dark {
@@ -650,6 +650,7 @@ body {
 
 .footer-all {
   display: flex;
+  align-items: baseline;
 }
 
 /*==============  END CONTACT ==============*/
